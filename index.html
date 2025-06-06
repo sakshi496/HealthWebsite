@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YourHealthHelper</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>YourHealthHelper</h1>
+    <nav>
+      <a href="#mindful">Mindful Minutes</a>
+      <a href="#journal">Symptom Journal</a>
+      <a href="#tracker">Healthy Habits</a>
+      <a href="#quiz">First-Aid Quiz</a>
+    </nav>
+  </header>
+
+  <section id="mindful">
+    <h2>Mindful Minutes</h2>
+    <button onclick="startMeditation(2)">2 Minute Session</button>
+    <button onclick="startMeditation(5)">5 Minute Session</button>
+    <button onclick="startMeditation(10)">10 Minute Session</button>
+    <div id="meditationDisplay"></div>
+  </section>
+
+  <section id="journal">
+    <h2>Symptom Journal</h2>
+    <form id="symptomForm">
+      <input type="date" name="date" required>
+      <textarea name="symptoms" placeholder="Describe symptoms..." required></textarea>
+      <button type="submit">Log Entry</button>
+    </form>
+    <div id="journalEntries"></div>
+  </section>
+
+  <section id="tracker">
+    <h2>Healthy Habits Tracker</h2>
+    <form id="habitForm">
+      <label>Water Intake (glasses): <input type="number" name="water"></label>
+      <label>Sleep Hours: <input type="number" name="sleep"></label>
+      <button type="submit">Track</button>
+    </form>
+    <div id="habitResults"></div>
+  </section>
+
+  <section id="quiz">
+    <h2>First-Aid Quiz Game</h2>
+    <button onclick="startQuiz()">Start Quiz</button>
+    <div id="quizBox"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
